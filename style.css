@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 html,
 body {
@@ -45,6 +46,8 @@ body {
   box-shadow: 0px 4px 4px black inset;
   padding: 15px 20px;
   color: white;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .search input[type="text"] {
   background-color: transparent;
@@ -58,7 +61,11 @@ body {
 .search input[type="text"]::placeholder {
   color: white;
 }
+.search:hover {
+  scale: 1.03;
+}
 .button button {
+  cursor: pointer;
   width: 100%;
   border: none;
   background-color: #4a397fb2;
@@ -67,6 +74,10 @@ body {
   padding: 15px 20px;
   overflow: hidden;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.button button:hover {
+  scale: 1.1;
 }
 
 @media (max-width: 600px) {
@@ -88,6 +99,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 50px;
+  transition: all 0.3s ease;
   gap: 30px;
 }
 .weather-card {
@@ -95,8 +107,11 @@ body {
   height: 240px;
   position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.4s linear;
   padding: 30px;
+}
+.weather-card:hover {
+  scale: 1.2;
 }
 .weather-card .img {
   left: 0;
