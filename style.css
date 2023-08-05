@@ -87,9 +87,9 @@ body {
     width: 100%;
   }
   .button {
-    width: 40%;
+    width: 100%;
     align-self: center;
-    margin: 10px auto;
+    margin: 15px auto;
   }
 }
 .weather-data {
