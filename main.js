@@ -83,26 +83,26 @@ function weatherIcon(data) {
   let imageUrl = "";
   let desc = "";
   if (data.weather[0].main === "Clear" || data.weather[0].main === "Sunny") {
-    imageUrl = "./Resources/png/wsymbol_0001_sunny.png";
+    imageUrl = "./Resources/icons/Sun cloud angled rain.png";
     desc = "Sunny";
   } else if (
     data.weather[0].main === "Storm" ||
     Math.round(data.wind.speed) >= 15
   ) {
-    imageUrl = "Resources/png/wsymbol_0006_mist.png";
+    imageUrl = "Resources/icons/Moon cloud mid rain.png";
     desc = "Windy";
   } else if (data.weather[0].main === "Rain" || Math.round(data.rain) >= 10) {
-    imageUrl = "Resources/png/wsymbol_0007_fog.png";
+    imageUrl = "Resources/icons/Tornado.png";
     desc = "Rainy";
   } else if (
     data.weather[0].main === "Haze" ||
     data.weather[0].main === "Cloud" ||
     Math.round(data.clouds) >= 65
   ) {
-    imageUrl = "Resources/png/wsymbol_0003_white_cloud.png";
+    imageUrl = "Resources/icons/Moon cloud fast wind.png";
     desc = "Cloudy";
   } else {
-    imageUrl = "Resources/png/wsymbol_0002_sunny_intervals.png";
+    imageUrl = "Resources/icons/Sun cloud angled rain.png";
     desc = "Partially Cloudy";
   }
   let info = [imageUrl, desc];
