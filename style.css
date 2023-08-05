@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(#2e335a, #1c1b33);
+  background: -moz-linear-gradient(#2e335a, #1c1b33);
+  background: -ms-linear-gradient(#2e335a, #1c1b33);
+  background: -o-linear-gradient(#2e335a, #1c1b33);
+  background: linear-gradient(#2e335a, #1c1b33);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  height: 100%;
+  padding-top: 30px;
+}
+.main {
+  text-align: center;
+  font-size: 4vw;
+}
+.search-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+}
+.search {
+  width: 80%;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  background-image: linear-gradient(#2e335a42, #1c1b3342);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px black inset;
+  padding: 15px 20px;
+  color: white;
+}
+.search input[type="text"] {
+  background-color: transparent;
+  align-items: start;
+  border: none;
+  outline: none;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+}
+.search input[type="text"]::placeholder {
+  color: white;
+}
+.button button {
+  width: 100%;
+  border: none;
+  background-color: #4a397fb2;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    display: block;
+  }
+  .search {
+    width: 100%;
+  }
+  .button {
+    width: 40%;
+    align-self: center;
+    margin: 10px auto;
+  }
+}
+.weather-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px;
+  gap: 30px;
+}
+.weather-card {
+  width: 345px;
+  height: 240px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 30px;
+}
+.weather-card .img {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.card-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-bottom p {
+  color: grey;
+}
+.png {
+  width: 160px;
+  /* height: 20px; */
+}

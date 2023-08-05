@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <h1 class="main">Weather Cities Project</h1>
+    <form class="search-box" id="search-box">
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input
+          id="input"
+          type="text"
+          placeholder="Search for a city or Airport"
+        />
+      </div>
+      <div class="button">
+        <button>Search</button>
+      </div>
+    </form>
+    <div class="weather-data" id="weather-data"></div>
+
     <script src="./main.js"></script>
   </body>
 </html>
